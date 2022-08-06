@@ -1,7 +1,8 @@
 <?php
 
 // nesta função vai limpar o texto da area "telefone"
-function limpar_texto($str){
+function limpar_texto($str)
+{
     return preg_replace("/[^0-9]/", "", $str);
 }
 
@@ -84,11 +85,14 @@ if (count($_POST) > 0) {
             <label>Data de Nascimento:</label>
             <input name="nascimento" type="text" placeholder="10/08/1998" value="<?php if (isset($_POST['nascimento'])) echo $_POST['nascimento']; ?>"><br>
 
+
             <div>
                 <button type="submit">Salvar Cliente</button>
+                <a href="clientes.php">Lista de clientes</a>
 
                 <p class="erroCadastro"><?php echo $erro ?></p>
             </div>
+
 
         </form>
 

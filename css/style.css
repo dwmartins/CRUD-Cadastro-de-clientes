@@ -1,21 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 :root {
-    --verde: #04BD7D;
+    --verde: #04bd7d;
     --verdeClaro: #05e295;
-    --cinaza: #2C2F35;
+    --cinaza: #2c2f35;
     --cinzaClaro2: #515966;
     --cinzaClaro: #c7c7c7;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .cadastro {
@@ -31,7 +31,7 @@ body {
 .cadastro .formulario {
     background-color: var(--cinaza);
     border-radius: 25px;
-    box-shadow: 5px 8px 20px 4px #2C2F35;
+    box-shadow: 5px 8px 20px 4px #2c2f35;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -59,12 +59,11 @@ body {
     padding: 10px;
     background-color: var(--cinzaClaro2);
     color: var(--cinzaClaro);
-    font-size: 16px;
 }
-
 .cadastro div {
-    width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cadastro button {
@@ -83,8 +82,14 @@ body {
     background-color: var(--verdeClaro);
 }
 
-.erroCadastro{
-    margin-top: 30px;
+.cadastro div a {
+    color: var(--cinzaClaro);
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.erroCadastro {
+    margin-top: 20px;
     color: #e73535;
     font-weight: bold;
 }
@@ -97,6 +102,8 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* Fim da pagina area de cadastro */
 
 .clienteCadastrado {
     width: 100%;
