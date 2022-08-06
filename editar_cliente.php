@@ -53,7 +53,7 @@ if (count($_POST) > 0) {
 
         $deu_certo = $mysqli->query($sql_code) or die($mysqli->error);
         if ($deu_certo) {
-            header("Location: cliente_atualizado.html");
+            header("Location: cliente_atualizado.php");
             unset($_POST); // aqui vai zerar a variavel
         }
     }
@@ -82,7 +82,7 @@ $cliente = $quey_cliente->fetch_assoc();
     <section class="cadastro">
         <form method="POST" action="" class="formulario">
 
-            <h2>Atualizar clientes:</h2>
+            <h2>Editar clientes:</h2>
 
             <label>Nome:</label>
             <input name="nome" type="text" placeholder="Seu nomex" value="<?php echo $cliente['nome']; ?>"><br>

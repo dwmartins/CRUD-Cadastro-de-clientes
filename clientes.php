@@ -69,7 +69,7 @@ $num_clientes = $query_clientes->num_rows;
                     <td>
                         <a href="editar_cliente.php?id=<?php echo $cliente['id'];?>">Editar</a>
 
-                        <a href="deletar.php?id=<?php echo $cliente['id'];?>">Deletar</a>
+                        <a href="deletar_cliente.php?id=<?php echo $cliente['id'];?>">Deletar</a>
                     </td>
                 </tr>
                 <?php

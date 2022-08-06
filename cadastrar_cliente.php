@@ -46,7 +46,7 @@ if (count($_POST) > 0) {
         VALUES ('$nome', '$email', '$telefone', '$nascimento', NOW())";
         $deu_certo = $mysqli->query($sql_code) or die($mysqli->error);
         if ($deu_certo) {
-            header("Location: cadastrado.html");
+            header("Location: cadastrado.php");
             unset($_POST); // aqui vai zerar a variavel
         }
     }
@@ -74,7 +74,7 @@ if (count($_POST) > 0) {
             <h2>Cadastrar clientes:</h2>
 
             <label>Nome:</label>
-            <input name="nome" type="text" placeholder="Seu nomex" value="<?php if (isset($_POST['nome'])) echo $_POST['nome']; ?>"><br>
+            <input name="nome" type="text" placeholder="Seu nome" value="<?php if (isset($_POST['nome'])) echo $_POST['nome']; ?>"><br>
 
             <label>E-mail:</label>
             <input name="email" type="text" placeholder="exemplo@gmail.com" value="<?php if (isset($_POST['email'])) echo $_POST['email']; ?>"><br>
